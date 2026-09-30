@@ -1,1 +1,155 @@
-<h1> Hola mundo </h1>
+ <!DOCTYPE html>
+ <html lang = "es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Machete HTML</title>
+    </head>
+    <body>
+        <h1>Machete de etiquetas y estructuras de HTML vistas en clase</h1>
+        <br>
+        <h2>Estrucutra básica de una pagína en html</h2>
+        <table width = "100%" border="1">
+            <tr>
+                <td>
+                    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang = "es"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;Mi pagina&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+                            
+                            
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                </td>
+            </tr>
+        </table>
+        <h3>Títulos</h3>
+        <h1>Títulos &lt;h1&gt;</h1>
+        <h2>Títulos &lt;h2&gt;</h2>
+        <h3>Títulos &lt;h3&gt;</h3>
+        <h4>Títulos &lt;h4&gt;</h4>
+        <h5>Títulos &lt;h5&gt;</h5>
+        <h6>Títulos &lt;h6&gt;</h6>
+        <br>
+        <p>Esta es la etiqueta &lt;p&gt;, sirve para colocar texto en nuestra pagína web</p>
+        <p>Texto de ejemplo: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <br>
+        <h2>Formato de texto</h2>
+        <p>Con &lt;b&gt;: <b>Negrita o Bold</b></p>
+        <p>Con &lt;i&gt;: <i>Cursiva o Italic</i></p>
+        <p>Con &lt;u&gt;: <u>Subrayado</u></p>
+        <br>
+        <h2>Listas</h2>
+        <h3>Listas numeradas &lt;ol&gt;</h3>
+        <table width = "100%" border = "1">
+            <tr>
+                <td width = "50%">
+                    <pre><code>&lt;ol&gt;
+    &lt;li&gt;Enero&lt;/li&gt;
+    &lt;li&gt;Febrero&lt;/li&gt;
+    &lt;li&gt;Marzo&lt;/li&gt;
+    &lt;li&gt;Abril&lt;/li&gt;
+    &lt;li&gt;Mayo&lt;/li&gt;
+    &lt;li&gt;Junio&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                </td>
+                <td width = "50%"><ol>
+                    <li>Enero</li>
+                    <li>Febrero</li>
+                    <li>Marzo</li>
+                    <li>Abril</li>
+                    <li>Mayo</li>
+                    <li>Junio</li>
+                    </ol></td>
+            </tr>
+        </table>
+        <h3>Lista no numerada &lt;ul&gt;</h3>
+        <table width = "100%" border = "1">
+            <tr>
+                <td width = "50%">
+                    <pre><code>&lt;ul&gt;
+    &lt;li&gt;Julio&lt;/li&gt;
+    &lt;li&gt;Agosto&lt;/li&gt;
+    &lt;li&gt;Septiembre&lt;/li&gt;
+    &lt;li&gt;Octubre&lt;/li&gt;
+    &lt;li&gt;Noviembre&lt;/li&gt;
+    &lt;li&gt;Diciembre&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                </td>
+                <td width = "50%"><ul>
+                    <li>Julio</li>
+                    <li>Abosto</li>
+                    <li>Septiembre</li>
+                    <li>Octubre</li>
+                    <li>Noviembre</li>
+                    <li>Diciembre</li>
+                    </ul></td>
+            </tr>
+        </table>
+        <p>Cada elemento de la lista, lo encerramos entre &lt;li&gt; y &lt;/li&gt;</p>
+        <br>
+        <h2>Dos etiquetas que no tienen cierre</h2>
+        <ul>
+            <li>Saltos de linea forzados: <b>&lt;br&gt;</b> que viene de <b>break</b>.</li>
+            <li>Lineas de separacion: <b>&lt;hr&gt;</b> viene de <b>horizontal ruler</b>.</li>
+        </ul>
+        <br>
+        <h2>Comentarios</h2>
+        <p>Los comentarios son fragmentos dentro del archivo donde colocamos notas que no van a ser mostrados en la página final.</p>
+        
+        <p>Estos fragmentos deben estar encerrados entre estas 2 etiquetas especiales: "<--" y "-->"</p>
+
+        <p>
+            Por ejemplo:
+
+<br><br>
+<--<br><br>
+
+    <i>Este es un bloque de comentarios<br>
+    dentro de un archivo HTML.</i>
+    <br><br>
+
+-->
+        </p>
+        <br>
+        <h2>Imágenes</h2>
+        <p>
+        <i>&lt;img<br>
+        src="{nombre del archivo en la misma carpeta}"<br>
+        width="{ancho en píxeles}"<br>
+        height="{alto en píxeles}"&gt;
+        </i></p>
+        <br>
+        <table width = "100%" border = "1">
+            <tr>
+                <td width = "50%">
+                     <p>
+        <i>&lt;img<br>
+        src="imagen.jpg"<br>
+        width="200"<br>
+        height="200"&gt;
+        </i></p>
+                </td>
+                <td width = "50%">
+<img src="1.6.jpg" width="200" height="200">
+                    </td>
+            </tr>
+            <tr>
+                <td>
+                     <p>
+        <i>&lt;img<br>
+        src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Bariloche-_Argentina.jpg"<br>
+        width="200"<br>
+        height="200"&gt;
+        </i></p>
+                </td>
+                <td>
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Bariloche-_Argentina.jpg?utm_source=es.wikipedia.org&utm_campaign=imageinfo&utm_content=original" width="200" height="200">
+                </td>
+            </tr>
+        </table>
+
+    </body>
+ </html>
