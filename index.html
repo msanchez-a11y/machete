@@ -115,22 +115,24 @@
         </p>
         <br>
         <h2>Imágenes</h2>
-        <p>
-        <i>&lt;img<br>
-        src="{nombre del archivo en la misma carpeta}"<br>
-        width="{ancho en píxeles}"<br>
+        <pre><code>
+        <i>&lt;img
+        src="{nombre del archivo en la misma carpeta}"
+        width="{ancho en píxeles}"
         height="{alto en píxeles}"&gt;
-        </i></p>
-        <br>
+        </i>
+        </code></pre>
+    
         <table width = "100%" border = "1">
             <tr>
                 <td width = "50%">
-                     <p>
-        <i>&lt;img<br>
-        src="imagen.jpg"<br>
-        width="200"<br>
-        height="200"&gt;
-        </i></p>
+        <pre><code>
+    <i>&lt;img
+    src="imagen.jpg"
+    width="200"
+    height="200"&gt;
+        </i>
+    </pre></code>
                 </td>
                 <td width = "50%">
 <img src="1.6.jpg" width="200" height="200">
@@ -138,23 +140,82 @@
             </tr>
             <tr>
                 <td>
-                     <p>
-        <i>&lt;img<br>
-        src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Bariloche-_Argentina.jpg"<br>
-        width="200"<br>
-        height="200"&gt;
-        </i></p>
+        <pre><code>
+    <i>&lt;img
+    src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Bariloche-_Argentina.jpg"
+    width="200"
+    height="200"&gt;
+    </i>
+        </pre></code>
                 </td>
                 <td>
 <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Bariloche-_Argentina.jpg?utm_source=es.wikipedia.org&utm_campaign=imageinfo&utm_content=original" width="200" height="200">
                 </td>
             </tr>
         </table>
-  <form>
-     <label>Nombre: </label>
-     <input type="text">
-      
-  </form>
-     
+
+        <h2>Tablas</h2>
+        <!-- Etiquetas -->
+        <p><b>&lt;table&gt;</b>: Indica dónde comienza y termina nuestra tabla</p>
+        <p><b>&lt;tr&gt;</b>: Representa una fila en la tabla</p>
+        <p><b>&lt;th&gt;</b>: Representa una celda. Generalmente se usa para colocar los titulos en las columnas.</p>
+        <p><b>&lt;td&gt;</b>: Representa una celda donde colocaremos información.</p>
+        <p><b>ATENCIÓN</b>: Siempre tienen que agregar <i>border="1"</i> para que sean visibles los bordes de nuestra tabla.</p>
+        <!--Codigo-->
+<pre><code>
+&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Nombre&lt;/th&gt;
+        &lt;th&gt;Curso&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Mauro&lt;/td&gt;
+        &lt;td&gt;2do A&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+     <!--Ejemplo-->
+<table border="1">
+    <tr>
+        <th>Nombre</th>
+        <th>Curso</th>
+    </tr>
+    <tr>
+        <td>Mauro</td>
+        <td>2do A</td>
+    </tr>
+</table>
+
+
+<h2>Enlaces</h2>
+<p>Para agregar enlaces usaremos la etiqueta <b>&lt;a&gt;</b>, esta nos permitira agregar enlaces a paginas web y tambien a otras paginas que hayamos creado.</p>
+<p>Tener en cuenta que dentro de <b>&lt;a&gt;</b> siempre tendremos que poner <i><b>href=" "</b></i> aqui es donde pondremos nuesto link para que los enlances funcionen.</p>
+<p><b>ATENCIÓN</b>: Si no ponemos ningún texto entre nuestras etiquetas <b>&lt;a&gt;</b> los enlaces jamas apareceran en nuestra página.</p>
+<pre><code>
+    &lt;a href=<b>"Link o archivo.html"</b>&gt;<i>Ir a enlace</i>&lt;/a&gt;
+</code></pre>
+
+<table border="1" width="100%">
+    <tr>
+        <td>
+            <pre><code>
+    &lt;a href=<b>"https://www.google.com/"</b>&gt;<i>Ir a google</i>&lt;/a&gt;
+            </code></pre>
+        </td>
+        <td width="50%">
+            <a href="https://www.google.com/">Ir a Google</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <pre><code>
+    &lt;a href=<b>"ejemplo.html"</b>&gt;<i>Ir a página de ejemplo</i>&lt;/a&gt;
+            </code></pre>
+        </td>
+        <td>
+            <a href="ejemplo.html">Ir a página de ejemplo</a>
+        </td>
+    </tr>
+</table>
     </body>
  </html>
